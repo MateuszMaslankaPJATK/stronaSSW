@@ -1,0 +1,73 @@
+.uklad-strony {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 30px;
+}
+.kolumna-srodek {
+    order: -1;
+    width: 100%;
+    padding: 0;
+}
+.kolumna-lewa, 
+.kolumna-prawa {
+    order: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.voyager img, 
+.token img, 
+.kolumna-prawa img {
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+}
+.voyagertxt {
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.bilety-page {
+    padding: 10px;
+}
+.wybor-misji {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.misja-option {
+    width: 45%; 
+    max-width: 200px;
+    margin: 0;
+}
+.misja-option img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.misja-option p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.plss-txt {
+    width: 100%; 
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 10px;
+}
+
+.cena-finalna {
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+
+#kwota {
+    font-size: 2rem;
+}
