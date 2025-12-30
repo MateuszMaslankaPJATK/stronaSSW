@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PJOLK – Bilety</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width:768px)">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-txt">
+      <a href="nowosci.html">NOWOŚCI</a>
+    </div>
+    <div class="logo-center">
+      <a href="index.html">
+        <img src="assets/pjok_logo.png" alt="Logo PJOLK" class="logo">
+      </a>
+    </div>
+    <div class="header-txt">
+      <a href="bilety.html">BILETY</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="bilety-page">
+    <h1>DOKONAJ WYCENY SWOJEGO BILETU</h1>
+
+    <!-- WYBÓR MISJI -->
+    <section class="wybor-misji">
+      <input type="radio" id="misja-orion" name="misja" data-cena="1500" hidden>
+      <label for="misja-orion" class="misja-option">
+        <img src="assets/earth.jpg" alt="Orion Echo">
+        <p>Orion Echo</p>
+      </label>
+
+      <input type="radio" id="misja-stellar" name="misja" data-cena="20000" hidden>
+      <label for="misja-stellar" class="misja-option">
+        <img src="assets/supernova.png" alt="Stellar Pulse">
+        <p>Stellar Pulse</p>
+      </label>
+
+      <input type="radio" id="misja-red" name="misja" data-cena="3500" hidden>
+      <label for="misja-red" class="misja-option">
+        <img src="assets/mars.jpg" alt="Red Frontier">
+        <p>Red Frontier</p>
+      </label>
+
+      <input type="radio" id="misja-lunar" name="misja" data-cena="7000" hidden>
+      <label for="misja-lunar" class="misja-option">
+        <img src="assets/moon.jpg" alt="Lunar Horizon">
+        <p>Lunar Horizon</p>
+      </label>
+    </section>
+
+    <!-- WYBÓR SYSTEMU PPLS -->
+    <section class="wybor-misji">
+            <p class="plss-txt">
+        System podtrzymywania życia PRO+ zachowuje wszystkie funkcje wersji Classic, a jednocześnie jest o 10 kg lżejszy. Został wzbogacony o nowoczesne rozwiązania technologiczne, takie jak moduł EGK oraz czujniki monitorujące stężenie HZ w organizmie, co czyni go bardziej wydajnym i dostosowanym do wymagających misji kosmicznych.
+      </p>
+      <input type="radio" id="ppls-classic" name="ppls" data-cena="1300" hidden>
+      <label for="ppls-classic" class="misja-option">
+        <p class="opis-ppls">PPLS Classic</p>
+        <img src="assets/PPLS.png" alt="PPLS Classic">
+      </label>
+      
+
+      <input type="radio" id="ppls-pro" name="ppls" data-cena="1700" hidden>
+      <label for="ppls-pro" class="misja-option">
+        <p class="opis-ppls">PPLS PRO+</p>
+        <img src="assets/ppls_pro.png" alt="PPLS PRO+">
+      </label>
+      
+    </section>
+
+  <!-- WYBÓR KOSTIUMU -->
+  <section class="wybor-misji">
+    <p class="plss-txt">
+      KOSMODERM 1997 to klasyczny skafander kosmiczny, cięższy i mniej ergonomiczny, ale niezawodny.
+      NEOSUIT to nowoczesna, lżejsza wersja z czujnikami monitorującymi organizm, idealna na długie misje.
+    </p>
+
+    <input type="radio" id="kostium-classic" name="kostium" data-cena="1899" hidden>
+    <label for="kostium-classic" class="misja-option">
+      <p class="opis-ppls">KOSMODERM 1997</p>
+      <img src="assets/astro_1.png" alt="Kosmoderm 1997">
+    </label>
+
+    <input type="radio" id="kostium-neo" name="kostium" data-cena="2399" hidden>
+    <label for="kostium-neo" class="misja-option">
+      <p class="opis-ppls">NEOSUIT</p>
+      <img src="assets/astro_2.png" alt="Neosuit">
+    </label>
+  </section>
+
+
+    <!-- CENA FINALNA -->
+    <section class="cena-finalna">
+    <h1 id="kwota">0 zł</h1>
+    </section>
+  </main>
+    <br><br><br>
+   <br><br><br>
+    <br><br><br>
+
+  <!-- JS -->
+  <script src="js/sum.js"></script>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>MATEUSZ MAŚLANKA SSW PROJEKT 2026</p>
+  </footer>
+</body>
+</html>
